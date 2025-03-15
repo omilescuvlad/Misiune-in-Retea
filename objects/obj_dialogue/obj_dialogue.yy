@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"obj_dialogue",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_dialogue",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -24,7 +21,7 @@
   "physicsGroup":1,
   "physicsKinematic":false,
   "physicsLinearDamping":0.1,
-  "physicsObject":false,
+  "physicsObject":true,
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
@@ -35,12 +32,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle_down",
-    "path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",
+    "name":"spr_box",
+    "path":"sprites/spr_box/spr_box.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_player_idle_down",
-    "path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
