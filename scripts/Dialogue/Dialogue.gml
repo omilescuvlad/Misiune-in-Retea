@@ -8,18 +8,18 @@ function create_dialogue(_messages){
 
 char_colors = {
     "Congrats": c_yellow,
-    "Coita": c_yellow,
+    "MC": c_yellow,
     "Dorel": c_fuchsia
 }
 
 welcome_dialogue = [
 {
-    name: "Coita",
-    msg: "What did you just call me?"
+    name: "MC",
+    msg: "Hello World."
 },
 
 {
     name: "Dorel",
-    msg: "Faggot"
+    msg: "Test"
 },
 ]
