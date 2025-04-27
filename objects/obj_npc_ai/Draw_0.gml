@@ -28,3 +28,4 @@ if (player != noone && point_distance(x, y, player.x, player.y) < 100) {
     draw_set_color(c_yellow);
     draw_text(x, y - sprite_height - 10, "Press E to interact");
 }
+

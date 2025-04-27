@@ -1,5 +1,11 @@
 /// Modified huggingface_api_call with timeout and error handling
 function huggingface_api_call(prompt, callback) {
+	
+	// Verifică dacă în modul offline
+    if (!variable_global_exists("offline_mode")) {
+        global.offline_mode = false;
+    }
+	
     // Check if in offline mode
     if (global.offline_mode) {
         // Extract NPC ID from conversation history
@@ -53,10 +59,13 @@ function huggingface_api_call(prompt, callback) {
     
     // Store callback for response handling
     ds_map_add(global.api_callbacks, string(request_id), callback);
+	
+	// Crează o variabilă locală pentru request_id pe care să o folosim în closure
+    var local_request_id = request_id;
     
     // Set up timeout to handle failed requests
     var timeout_timer = time_source_create(time_source_global, 10, time_source_units_seconds, function() {
-        if (ds_map_exists(global.api_callbacks, string(request_id))) {
+        if (ds_map_exists(global.api_callbacks, string(local_request_id))) {
             // Extract NPC ID from conversation history
             var npc_id = "";
             for (var key = ds_map_find_first(global.npc_prompts); key != undefined; key = ds_map_find_next(global.npc_prompts, key)) {
@@ -76,7 +85,7 @@ function huggingface_api_call(prompt, callback) {
             callback(fallback_response);
             
             // Clean up
-            ds_map_delete(global.api_callbacks, string(request_id));
+            ds_map_delete(global.api_callbacks, string(local_request_id));
             global.offline_mode = true; // Switch to offline mode after timeout
             
             // Show warning message about offline mode

@@ -72,6 +72,7 @@
     {"id":{"name":"rm_dev_team_office","path":"rooms/rm_dev_team_office/rm_dev_team_office.yy",},},
     {"id":{"name":"rm_network_hub","path":"rooms/rm_network_hub/rm_network_hub.yy",},},
     {"id":{"name":"rm_security_lobby","path":"rooms/rm_security_lobby/rm_security_lobby.yy",},},
+    {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"activate","path":"scripts/activate/activate.yy",},},
     {"id":{"name":"check_puzzle_solution","path":"scripts/check_puzzle_solution/check_puzzle_solution.yy",},},
     {"id":{"name":"create_interactive_npc","path":"scripts/create_interactive_npc/create_interactive_npc.yy",},},

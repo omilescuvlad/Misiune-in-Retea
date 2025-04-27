@@ -2,6 +2,8 @@ function initialize_npc_system() {
     global.api_callbacks = ds_map_create();
     global.npc_conversations = ds_map_create();
     global.puzzle_solved = ds_map_create();
+	
+	global.offline_mode = false; // Setare mod online implicit
 
     // Define prompts for each NPC
     global.npc_prompts = ds_map_create();

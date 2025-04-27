@@ -1,5 +1,5 @@
 /// obj_npc_ai Step Event
-// Handle text typing 
+// Handle text typing effect
 
 // În Step Event al NPC-ului
 var dist = distance_to_object(obj_player);
