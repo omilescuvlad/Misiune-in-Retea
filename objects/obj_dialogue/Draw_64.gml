@@ -18,3 +18,4 @@ draw_set_color(c_white);
 _dy += 40;
 
 draw_text_ext(_dx, _dy, draw_message, -1, _boxw - _dx * 2);
+

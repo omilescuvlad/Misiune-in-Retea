@@ -29,3 +29,15 @@ else {
 if(hp <= 0) {
     game_restart();
 }
+
+// In obj_player Step Event
+if (keyboard_check_pressed(ord("E"))) {
+    // Check for nearby interaction zones
+    var nearest_zone = instance_nearest(x, y, obj_interaction_zone);
+    if (nearest_zone != noone && point_distance(x, y, nearest_zone.x, nearest_zone.y) < nearest_zone.interaction_range) {
+        // Trigger interaction
+        with (nearest_zone.target_object) {
+            interact();
+        }
+    }
+}

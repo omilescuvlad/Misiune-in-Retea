@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"huggingface_api_call",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"huggingface_api_call",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
