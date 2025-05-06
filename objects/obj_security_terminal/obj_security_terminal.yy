@@ -9,8 +9,8 @@
   "name":"obj_security_terminal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Puzzles",
+    "path":"folders/Objects/Puzzles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

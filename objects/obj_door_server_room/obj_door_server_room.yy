@@ -10,8 +10,8 @@
   "name":"obj_door_server_room",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Puzzles",
+    "path":"folders/Objects/Puzzles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,10 +1,8 @@
-/// obj_npc_ai Step Event
-// Check for player interaction with E key
 var dist = distance_to_object(obj_player);
 if (dist < 50 && keyboard_check_pressed(ord("E"))) {
     show_debug_message("Dialog activated");
     // Call the interaction function
-    event_user(1);
+    interact();
 }
 
 // Handle text typing

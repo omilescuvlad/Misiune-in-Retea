@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"huggingface_api_response",
+  "%Name":"gemini_api_response",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"huggingface_api_response",
+  "name":"gemini_api_response",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

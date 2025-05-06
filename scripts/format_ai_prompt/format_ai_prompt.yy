@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"format_ai_prompt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"format_ai_prompt",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

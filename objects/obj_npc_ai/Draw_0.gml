@@ -20,6 +20,6 @@ if (current_message != "") {
         draw_set_color(c_black);
         draw_text(bubble_x + bubble_width - 20, bubble_y + bubble_height - 20, "▼");
     }
+	
 }
-
 
