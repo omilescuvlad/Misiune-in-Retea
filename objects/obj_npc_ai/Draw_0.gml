@@ -22,10 +22,4 @@ if (current_message != "") {
     }
 }
 
-// Draw interaction prompt when player is near
-var player = instance_nearest(x, y, obj_player); // Make sure obj_player exists
-if (player != noone && point_distance(x, y, player.x, player.y) < 100) {
-    draw_set_color(c_yellow);
-    draw_text(x, y - sprite_height - 10, "Press E to interact");
-}
 

@@ -1,8 +1,9 @@
 /// obj_text_input Step Event
 if (input_active) {
+    // Only accept input when active
     keyboard_string = string_copy(keyboard_string, 1, 100); // Limit input length
     input_text = keyboard_string;
-    
+
     if (keyboard_check_pressed(vk_enter)) {
         input_active = false;
         visible = false;

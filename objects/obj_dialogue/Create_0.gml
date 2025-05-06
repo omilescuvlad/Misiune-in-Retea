@@ -1,5 +1,5 @@
 messages = [];
-current_message = -1;
+current_message = -1; 
 current_char = 0;
 draw_message = "";
 
@@ -23,3 +23,4 @@ ds_map_add(global.npc_prompts, "developer", "You are a developer in a cybersecur
 
 // Create event handler for HTTP responses
 show_debug_message("NPC system initialized");
+

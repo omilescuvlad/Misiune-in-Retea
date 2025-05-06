@@ -1,17 +1,20 @@
-/// obj_npc_ai - Interact function
+/// @function interact()
+/// @description Gestionează interacțiunea cu NPC-ul când jucătorul apasă E
 function interact() {
+	show_debug_message(">> scr_interact start, npc_id=" + string(npc_id));
+
     if (interaction_cooldown > 0) return;
     
     if (!lesson_delivered) {
-        // First interaction - deliver the lesson
+        // Prima interacțiune - oferă lecția
         lesson_delivered = true;
         
-        // Get the appropriate prompt
+        // Obține promptul corespunzător
         var prompt = global.npc_prompts[? npc_id];
         if (prompt != undefined) {
             conversation_history = "System: " + prompt + "\n\nPlayer: Hi, can you help me?\n\n";
             
-            // Show loading message
+            // Arată mesajul de încărcare
             ds_queue_enqueue(message_queue, "Loading...");
             if (!typing) {
                 current_message = ds_queue_dequeue(message_queue);
@@ -19,9 +22,9 @@ function interact() {
                 text_progress = 0;
             }
             
-            // Call the API
+            // Apelează API-ul
             huggingface_api_call(conversation_history, function(response) {
-                // Clear loading message
+                // Șterge mesajul de încărcare
                 if (current_message == "Loading...") {
                     current_message = "";
                     typing = false;
@@ -38,11 +41,11 @@ function interact() {
             });
         }
     } else {
-        // If currently showing a message, clear it and show input
+        // Dacă se afișează deja un mesaj, șterge-l și arată input-ul
         if (current_message != "" && !typing) {
             current_message = "";
             
-            // Show text input for follow-up questions
+            // Arată input-ul de text pentru întrebări suplimentare
             if (!instance_exists(obj_text_input)) {
                 instance_create_layer(0, 0, "UI", obj_text_input);
             }
@@ -53,7 +56,7 @@ function interact() {
                     
                     conversation_history += "Player: " + input_text + "\n\n";
                     
-                    // Show loading message
+                    // Arată mesajul de încărcare
                     ds_queue_enqueue(message_queue, "Loading...");
                     if (!typing) {
                         current_message = ds_queue_dequeue(message_queue);
@@ -61,10 +64,10 @@ function interact() {
                         text_progress = 0;
                     }
                     
-                    // Also check if this is an attempt to solve the puzzle
+                    // Verifică dacă este o încercare de rezolvare a puzzle-ului
                     var is_solution_attempt = false;
                     
-                    // Look for keywords in the input that suggest it's a solution attempt
+                    // Caută cuvinte cheie în input care sugerează că este o încercare de soluție
                     var solution_keywords = ["solution", "answer", "solve", "try", "fixed", "correct", "the key is", "password is"];
                     for (var i = 0; i < array_length(solution_keywords); i++) {
                         if (string_pos(solution_keywords[i], string_lower(input_text)) > 0) {
@@ -73,35 +76,35 @@ function interact() {
                         }
                     }
                     
-                    // Check if it's a direct solution (just the answer without explanation)
+                    // Verifică dacă este o soluție directă (doar răspunsul fără explicații)
                     if (string_length(input_text) <= 10 && !is_solution_attempt) {
                         is_solution_attempt = true;
                     }
                     
                     if (is_solution_attempt) {
-                        // Try to extract potential solution from the input
+                        // Încearcă să extragă posibila soluție din input
                         var potential_solution = input_text;
                         
-                        // Check if the solution is correct
+                        // Verifică dacă soluția este corectă
                         if (check_puzzle_solution(npc_id, potential_solution)) {
-                            // Mark puzzle as solved
+                            // Marchează puzzle-ul ca rezolvat
                             ds_map_replace(global.puzzle_solved, npc_id, true);
                             
-                            // Success message
+                            // Mesaj de succes
                             var success_msg = "That's correct! You've solved the puzzle.";
                             ds_queue_clear(message_queue);
                             ds_queue_enqueue(message_queue, success_msg);
                             current_message = "";
                             typing = false;
                             
-                            // Trigger puzzle completion event
+                            // Declanșează evenimentul de completare a puzzle-ului
                             event_user(0);
                         }
                     }
                     
-                    // Call the API with the updated conversation history
+                    // Apelează API-ul cu istoricul conversației actualizat
                     huggingface_api_call(conversation_history, function(response) {
-                        // Clear loading message if it's showing
+                        // Șterge mesajul de încărcare dacă se afișează
                         if (current_message == "Loading...") {
                             current_message = "";
                             typing = false;
@@ -117,7 +120,7 @@ function interact() {
                         conversation_history += "Assistant: " + response + "\n\n";
                     });
                     
-                    // Set interaction cooldown to prevent spam
+                    // Setează cooldown-ul de interacțiune pentru a preveni spam-ul
                     interaction_cooldown = 5;
                 }));
             }

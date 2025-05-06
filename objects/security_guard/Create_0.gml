@@ -16,3 +16,10 @@ bubble_height = 150;
 bubble_padding = 10;
 bubble_x = x - bubble_width/2;
 bubble_y = y - sprite_height - bubble_height - 20;
+
+// Initialize NPC system if not already done
+if (!variable_global_exists("api_callbacks")) {
+    initialize_npc_system();
+}
+
+

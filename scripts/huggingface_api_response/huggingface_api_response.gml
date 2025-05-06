@@ -30,6 +30,7 @@ function huggingface_api_response(async_load) {
     } else if (is_method(callback)) {
         callback(response);
     }
+	
     
     // Clean up
     ds_map_delete(global.api_callbacks, string(request_id));
