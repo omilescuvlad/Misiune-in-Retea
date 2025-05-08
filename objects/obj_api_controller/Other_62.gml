@@ -1,1 +1,0 @@
-gemini_api_response(async_load);
