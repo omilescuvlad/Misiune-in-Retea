@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"format_ai_prompt",
+  "%Name":"test_http_request",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"format_ai_prompt",
+  "name":"test_http_request",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -3,15 +3,35 @@ function gemini_api_response(async_load) {
     var request_id = async_load[? "id"];
     var status = async_load[? "status"];
     var http_status = async_load[? "http_status"];
-    
-    // Debug logging
-    show_debug_message("API RESPONSE RECEIVED - ID: " + string(request_id) + 
-                      ", Status: " + string(status) + 
-                      ", HTTP Status: " + string(http_status));
-    
-    //if (async_load[? "response_body"] != undefined) {
-        show_debug_message("Response body received (length): " + string(async_load[? "response_body"]));
-    //}
+
+    // VERIFICARE RĂSPUNS
+    if (async_load[? "response_body"] == undefined || async_load[? "response_body"] == "") {
+        show_debug_message("❌ Niciun corp de răspuns primit (response_body este gol sau inexistent).");
+    } else {
+        show_debug_message("✅ Response body primit: " + string(async_load[? "response_body"]));
+    }
+
+
+	
+	
+					  
+	show_debug_message("API RESPONSE RECEIVED - ID: " + string(request_id) + 
+                  ", Status: " + string(status) + 
+                  ", HTTP Status: " + string(http_status));
+
+    if (!is_real(status)) {
+    show_debug_message("WARNING: status nu este un număr real. Valoare brută: " + string(status));
+	}
+
+		if (!is_real(http_status)) {
+			show_debug_message("WARNING: http_status nu este un număr real. Valoare brută: " + string(http_status));
+	}
+
+	show_debug_message("API RESPONSE RECEIVED:");
+	show_debug_message("   ID: " + string(request_id));
+	show_debug_message("   Status: " + string(status));
+	show_debug_message("   HTTP Status: " + string(http_status));
+
     
     var response = "";
 
@@ -42,7 +62,9 @@ function gemini_api_response(async_load) {
     
     // Handle non-200 responses
     if (status != 200) {
-        response = "Error " + string(status) + ": " + async_load[? "status_text"];
+    var status_text = (async_load[? "status_text"] != undefined) ? async_load[? "status_text"] : "No status text";
+    response = "Error " + string(status) + ": " + status_text;
+
         
         // Try to get more detailed error message from response body if available
         try {
@@ -71,12 +93,13 @@ function gemini_api_response(async_load) {
         ds_map_delete(global.api_callbacks, string(request_id));
         return;
     }
+	
     
     // Handle successful response
     try {
         // Get response body
         var response_text = async_load[? "response_body"];
-        show_debug_message("Response message !!!!!!!!!!! " + response_text);
+
         // If empty response
         if (response_text == "" || response_text == undefined) {
             response = "Error: Empty response from server.";

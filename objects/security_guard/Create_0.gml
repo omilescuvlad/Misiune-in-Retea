@@ -9,6 +9,7 @@ display_text = "";
 text_progress = 0;
 text_speed = 0.5;
 interaction_cooldown = 0;
+cooldown_value = 30; // sau orice altă valoare dorești
 
 // Initialize speech bubble dimensions
 bubble_width = 100;

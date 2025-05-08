@@ -36,3 +36,6 @@ ds_map_add(global.fallback_responses, "developer_initial",
 );
 
 // Add more fallback responses as needed
+
+
+test_http_request();

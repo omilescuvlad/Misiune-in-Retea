@@ -5,4 +5,4 @@ if (!instance_exists(obj_api_controller)) {
 }
 
 
-create_interactive_npc(256, 222, "Controllers", "security_guard", spr_security_guard);
+create_interactive_npc(256, 222, "Instances", "security_guard", spr_security_guard);

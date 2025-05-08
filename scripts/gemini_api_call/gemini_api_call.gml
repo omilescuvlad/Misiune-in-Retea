@@ -1,4 +1,3 @@
-/// gemini_api_call - For Google's Gemini 2.0 Flash model
 function gemini_api_call(prompt, callback) {
     // Check if in offline mode
     if (!variable_global_exists("offline_mode")) {
@@ -18,9 +17,12 @@ function gemini_api_call(prompt, callback) {
     }
 
     // Gemini API endpoint
-    // Note: Replace API_KEY with your actual Gemini API key
-    var api_key = "AIzaSyCD4HWKVQpXrQyZZ21C0B57AyeFLcu-BeE";
-    var api_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + api_key;
+    //var api_key = "AIzaSyCHuiXqEluhTIRi5eFhDJQNBPDWGjTq2Eg";
+    //var api_url = "https://omilescu-vlad.free.nf/gemini_proxy.php;"
+	//var api_url = "https://c0bbccaa-9a76-4101-8112-2e218ff5e8d7-00-3fudm34j61vwr.riker.replit.dev/";
+	var api_url = "http://192.168.8.112/gemini_proxy.php";
+
+	
     
     // Create the request structure for Gemini API
     var request_data = {
@@ -46,7 +48,7 @@ function gemini_api_call(prompt, callback) {
     var json_data = json_stringify(request_data);
     
     // Log the request for debugging
-    show_debug_message("GEMINI API REQUEST: " + json_data);
+    //show_debug_message("GEMINI API REQUEST: " + json_data);
 
     // Create map for headers
     var headers = ds_map_create();
@@ -64,21 +66,28 @@ function gemini_api_call(prompt, callback) {
     // Store callback for response handling
     ds_map_add(global.api_callbacks, string(request_id), callback);
 
-    // Set up timeout to handle failed requests
-    var timeout_timer = time_source_create(time_source_global, 15, time_source_units_seconds, 
-        function(_request_id, _callback) {
-            if (ds_map_exists(global.api_callbacks, string(_request_id))) {
-                // Execute callback with error message
-                _callback("Error: Request timed out. Please try again.");
-                
-                // Clean up
-                ds_map_delete(global.api_callbacks, string(_request_id));
-                
-                // Log timeout for debugging
-                show_debug_message("API REQUEST TIMED OUT: " + string(_request_id));
-            }
-        }, 
-        [[request_id, callback]], 1);
+    // Create a fallback response for timeout or error
+    var fallback_response = "Timed out";
+
+    // Define timeout handler function
+    function timeout_handler(_request_id, _callback, _fallback) {
+        if (ds_map_exists(global.api_callbacks, string(_request_id))) {
+            show_debug_message("API REQUEST TIMED OUT: " + string(_request_id));
+            show_debug_message("Using fallback response instead");
+            _callback(_fallback);
+            ds_map_delete(global.api_callbacks, string(_request_id));
+        }
+    }
+
+    // Set up timeout to handle failed requests - increased to 20 seconds
+    var timeout_timer = time_source_create(
+        time_source_global,
+        20,
+        time_source_units_seconds,
+        timeout_handler,
+        [request_id, callback, fallback_response],
+        1
+    );
 
     time_source_start(timeout_timer);
     return request_id;
