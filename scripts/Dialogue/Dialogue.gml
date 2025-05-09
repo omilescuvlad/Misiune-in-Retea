@@ -8,18 +8,17 @@ function create_dialogue(_messages){
 
 char_colors = {
     "Congrats": c_yellow,
-    "MC": c_yellow,
-    "Dorel": c_fuchsia
+    "You": c_fuchsia,
+    "Developer": c_yellow
 }
 
-welcome_dialogue = [
+security_room_introduction = [
 {
-    name: "MC",
-    msg: "Hello World."
+    name: "Developer",
+    msg: "AI-ul ne-a blocat rapoartele de incident! Utilizam criptarea AES-128, dar cheia este corupta. Nu as vrea sa te ingrijorez dar o parte din bug-uri au prins viata."
 },
-
 {
-    name: "Dorel",
-    msg: "Test"
+    name: "Developer",
+    msg: "Am facut tot ce avem in putinta sa le tinem in frau, dar avem nevoie de tine pentru a le dobori!"
 },
 ]

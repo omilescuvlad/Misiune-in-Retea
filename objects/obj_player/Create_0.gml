@@ -26,8 +26,8 @@ function add_xp(_xp_to_add)
         
         create_dialogue([
         {
-            name: "Congrats",
-            msg: $"You are now LVL {level}.\nYour new stats are:\nHP {hp_total}\nDMG {damage}"
+            name: "Felicitari!",
+            msg: $"Ai avansat la nicelul {level}.\nAtributele tale sunt acum:\nHP {hp_total}\nDMG {damage}"
         }
         ])
     }

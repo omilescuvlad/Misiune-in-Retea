@@ -20,5 +20,3 @@ _dy += 40;
 draw_text_ext(_dx, _dy, draw_message, -1, _boxw - _dx * 2);
 
 
-var _msg = messages[current_message];
-draw_text(x, y, _msg.text);
