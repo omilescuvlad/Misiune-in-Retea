@@ -9,16 +9,16 @@ function create_dialogue(_messages){
 char_colors = {
     "Congrats": c_yellow,
     "You": c_fuchsia,
-    "Developer": c_yellow
+    "Gardian": c_yellow
 }
 
 security_room_introduction = [
 {
-    name: "Developer",
-    msg: "AI-ul ne-a blocat rapoartele de incident! Utilizam criptarea AES-128, dar cheia este corupta. Nu as vrea sa te ingrijorez dar o parte din bug-uri au prins viata."
+    name: "Gardian",
+    msg: "AI-ul ne-a blocat rapoartele de incident! Din cate stiu folosim criptarea AES-128, dar cheia este corupta. Nu as vrea sa te ingrijorez dar o parte din bug-uri au prins viata."
 },
 {
-    name: "Developer",
-    msg: "Am facut tot ce avem in putinta sa le tinem in frau, dar avem nevoie de tine pentru a le dobori!"
+    name: "Gardian",
+    msg: "Developerii nostri au reusit sa extraga doar cheia corupta, din pacate, prin toata panica indusa am reusit doar sa o scriu pe o foaie. Singurul lucru pe care mi-l amintesc e ca ar trebui sa fie undeva in una dintre camerele de securitate."
 },
 ]
