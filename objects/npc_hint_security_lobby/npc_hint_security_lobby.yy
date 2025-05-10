@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ecrane",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"npc_hint_security_lobby",
+  "eventList":[],
   "managed":true,
-  "name":"obj_ecrane",
+  "name":"npc_hint_security_lobby",
   "overriddenProperties":[],
   "parent":{
-    "name":"Puzzles",
-    "path":"folders/Objects/Puzzles.yy",
+    "name":"NPC",
+    "path":"folders/Objects/NPC.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_npc_parent",
+    "path":"objects/obj_npc_parent/obj_npc_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy1",
-    "path":"sprites/spr_enemy1/spr_enemy1.yy",
+    "name":"spr_npc1",
+    "path":"sprites/spr_npc1/spr_npc1.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
