@@ -116,8 +116,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_dev_team_office","path":"rooms/rm_dev_team_office/rm_dev_team_office.yy",},},
     {"roomId":{"name":"rm_security_lobby","path":"rooms/rm_security_lobby/rm_security_lobby.yy",},},
+    {"roomId":{"name":"rm_dev_team_office","path":"rooms/rm_dev_team_office/rm_dev_team_office.yy",},},
     {"roomId":{"name":"rm_battle","path":"rooms/rm_battle/rm_battle.yy",},},
     {"roomId":{"name":"rm_network_hub","path":"rooms/rm_network_hub/rm_network_hub.yy",},},
     {"roomId":{"name":"rm_code_repository","path":"rooms/rm_code_repository/rm_code_repository.yy",},},

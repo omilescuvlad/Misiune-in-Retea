@@ -7,7 +7,7 @@ function create_dialogue(_messages){
 }
 
 char_colors = {
-    "Felicitari": c_yellow,
+    "Felicitari!": c_yellow,
     "You": c_fuchsia,
     "Gardian": c_yellow,
     "Developer Speriat" : c_green,
