@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc1",
-    "path":"sprites/spr_npc1/spr_npc1.yy",
+    "name":"spr_security_room_hint",
+    "path":"sprites/spr_security_room_hint/spr_security_room_hint.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

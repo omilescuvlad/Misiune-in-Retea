@@ -44,3 +44,13 @@ CAN'T:
 YOU CAN'T USE THE ASSET IN COMMERCIAL PROJECTS
 YOU CAN'T EDIT THE SPRITES AND USE THEM IN COMMERCIAL PROJECTS
 YOU CAN'T EDIT AND RESELL THE SPRITES
+
+
+
+SHA-256 implementation in GML – created by Reddit user Anixia, retrieved from
+https://www.reddit.com/r/gamemaker/comments/eween1/sha256_hashes_in_native_gml_gms2/
+Used with permission for educational purposes.
+
+
+terminal beep sound (snd_beep):
+https://freesound.org/people/InspectorJ/sounds/403008/

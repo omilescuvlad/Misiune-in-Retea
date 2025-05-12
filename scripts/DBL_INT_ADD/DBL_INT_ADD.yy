@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DBL_INT_ADD",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DBL_INT_ADD",
+  "parent":{
+    "name":"SHA256",
+    "path":"folders/Scripts/SHA256.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

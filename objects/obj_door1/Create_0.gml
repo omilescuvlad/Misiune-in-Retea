@@ -1,0 +1,1 @@
+global.puzzle1_solved = false;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sha256update",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sha256update",
+  "parent":{
+    "name":"SHA256",
+    "path":"folders/Scripts/SHA256.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

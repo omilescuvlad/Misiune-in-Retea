@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"SHA256_Readme",
+  "name":"SHA256_Readme",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

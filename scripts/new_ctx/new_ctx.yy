@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"new_ctx",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"new_ctx",
+  "parent":{
+    "name":"SHA256",
+    "path":"folders/Scripts/SHA256.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

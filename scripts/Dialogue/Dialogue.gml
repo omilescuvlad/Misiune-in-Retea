@@ -8,10 +8,10 @@ function create_dialogue(_messages){
 
 char_colors = {
     "Felicitari!": c_yellow,
-    "You": c_fuchsia,
     "Gardian": c_yellow,
     "Developer Speriat" : c_green,
     "b4t3" : c_red,
+    "Developer": c_green,
 }
 
 security_room_introduction = [
@@ -38,5 +38,11 @@ security_room_final_tip = [
 {
     name: "b4t3",
     msg: "B1t1 d3 p4rrr1t4t3",
+},
+]
+dev_office_minilesson = [
+{
+    name: "Developer",
+    msg: "Stocarea parolelor in text simplu este periculos. Sistemele folosesc 'salts' (date aleatoare) combinate cu algoritmi de hashing (ex: SHA-256) pentru a proteja parolele. Salt-urile previn atacurile precalculate de tip 'rainbow table'.",
 },
 ]

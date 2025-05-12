@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"int_to_hex",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"int_to_hex",
+  "parent":{
+    "name":"SHA256",
+    "path":"folders/Scripts/SHA256.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
