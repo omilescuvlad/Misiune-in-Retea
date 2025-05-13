@@ -1,13 +1,13 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 4AFC32CD
-/// @DnDArgument : "code" "draw_self(); // sprite terminal$(13_10)$(13_10)draw_set_font(fnt_terminal);$(13_10)$(13_10)// Dimensiuni terminal$(13_10)var w = 240;$(13_10)var h = 70;$(13_10)$(13_10)var offset_x = -w / 2;$(13_10)var offset_y = -h - 8;$(13_10)$(13_10)var tx = x + offset_x;$(13_10)var ty = y + offset_y;$(13_10)$(13_10)if (input_active) {$(13_10)    // Fundal negru + contur alb$(13_10)    draw_set_color(c_black);$(13_10)    draw_rectangle(tx, ty, tx + w, ty + h, false);$(13_10)    draw_set_color(c_white);$(13_10)    draw_rectangle(tx, ty, tx + w, ty + h, true);$(13_10)$(13_10)    draw_set_halign(fa_left);$(13_10)    draw_set_valign(fa_top);$(13_10)    draw_set_color(c_lime);$(13_10)$(13_10)    // Text input$(13_10)    draw_text(tx + 10, ty + 10, "Introdu parola: " + player_input);$(13_10)$(13_10)    // Cursor clipitor$(13_10)    if (current_time mod 1000 < 500) {$(13_10)        var cx = tx + 10 + string_width("Introdu parola: " + player_input);$(13_10)        draw_text(cx, ty + 10, "_");$(13_10)    }$(13_10)$(13_10)    draw_text(tx + 10, ty + 40, feedback_text);$(13_10)}$(13_10)$(13_10)$(13_10)"
+/// @DnDArgument : "code" "draw_self(); // sprite terminal$(13_10)$(13_10)draw_set_font(fnt_terminal);$(13_10)$(13_10)// Dimensiuni terminal$(13_10)var w = 220;$(13_10)var h = 70;$(13_10)$(13_10)var offset_x = -w / 2;$(13_10)var offset_y = -h - 8;$(13_10)$(13_10)var tx = x + offset_x;$(13_10)var ty = y + offset_y;$(13_10)$(13_10)if (input_active) {$(13_10)    // Fundal negru + contur alb$(13_10)    draw_set_color(c_black);$(13_10)    draw_rectangle(tx, ty, tx + w, ty + h, false);$(13_10)    draw_set_color(c_white);$(13_10)    draw_rectangle(tx, ty, tx + w, ty + h, true);$(13_10)$(13_10)    draw_set_halign(fa_left);$(13_10)    draw_set_valign(fa_top);$(13_10)    draw_set_color(c_lime);$(13_10)$(13_10)    // Text input$(13_10)    draw_text(tx + 10, ty + 10, "Introdu parola: " + player_input);$(13_10)$(13_10)    // Cursor clipitor$(13_10)    if (current_time mod 1000 < 500) {$(13_10)        var cx = tx + 10 + string_width("Introdu parola: " + player_input);$(13_10)        draw_text(cx, ty + 10, "_");$(13_10)    }$(13_10)$(13_10)    draw_text(tx + 10, ty + 40, feedback_text);$(13_10)}$(13_10)$(13_10)if (!input_active && !match_found && instance_exists(obj_player)) {$(13_10)    if (point_distance(x, y, obj_player.x, obj_player.y) < 50) {$(13_10)        draw_set_color(c_yellow);$(13_10)        draw_text(x - 110, y - 20, "Apasa E pentru a accesa terminalul.");$(13_10)    }$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)"
 draw_self(); // sprite terminal
 
 draw_set_font(fnt_terminal);
 
 // Dimensiuni terminal
-var w = 240;
+var w = 220;
 var h = 70;
 
 var offset_x = -w / 2;
@@ -37,4 +37,11 @@ if (input_active) {
     }
 
     draw_text(tx + 10, ty + 40, feedback_text);
+}
+
+if (!input_active && !match_found && instance_exists(obj_player)) {
+    if (point_distance(x, y, obj_player.x, obj_player.y) < 50) {
+        draw_set_color(c_yellow);
+        draw_text(x - 110, y - 20, "Apasa E pentru a accesa terminalul.");
+    }
 }

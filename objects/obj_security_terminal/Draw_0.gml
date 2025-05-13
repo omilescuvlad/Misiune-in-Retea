@@ -35,4 +35,12 @@ if (input_active) {
     draw_text(tx + 10, ty + 40, feedback_text);
 }
 
+if (!input_active && !match_found && instance_exists(obj_player)) {
+    if (point_distance(x, y, obj_player.x, obj_player.y) < 35) {
+        draw_set_color(c_yellow);
+        draw_text(x - 110, y - 20, "Apasa E pentru a accesa terminalul.");
+    }
+}
+
+
 

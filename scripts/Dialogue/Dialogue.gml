@@ -12,6 +12,7 @@ char_colors = {
     "Developer Speriat" : c_green,
     "b4t3" : c_red,
     "Developer": c_green,
+    "Developer (debugging a database breach)": c_green,
 }
 
 security_room_introduction = [
@@ -24,6 +25,7 @@ security_room_introduction = [
     msg: "Developerii nostri au reusit sa extraga doar cheia corupta, din pacate, nu te pot ajuta cu asta. Sunt sigur ca unul dintre developerii nostri au reusit sa o depisteze!"
 },
 ]
+
 security_room_tip = [
 {
     name: "Developer Speriat",
@@ -31,18 +33,31 @@ security_room_tip = [
 },
 {
     name: "Developer Speriat",
-    msg: "Din cate vad in terminal, cheia corupta de AI este acum 0A3F?7E2",
+    msg: "Din cate vad in terminal, cheia corupta de AI este acum 0A 3F ?7 E2 (Paritatea celui de al treilea octet este invalida)",
 },
 ]
+
 security_room_final_tip = [
 {
     name: "b4t3",
     msg: "B1t1 d3 p4rrr1t4t3",
 },
 ]
+
 dev_office_minilesson = [
 {
     name: "Developer",
     msg: "Stocarea parolelor in text simplu este periculos. Sistemele folosesc 'salts' (date aleatoare) combinate cu algoritmi de hashing (ex: SHA-256) pentru a proteja parolele. Salt-urile previn atacurile precalculate de tip 'rainbow table'.",
+},
+]
+
+dev_office_tip = [
+{
+    name: "Developer",
+    msg: "AI-ul ne-a spart baza de date cu utilizatori! Am analizat parolele, dar unele au fost inca sparte. Uita-te la aceasta intrare:",
+},
+{
+    name: "Developer",
+    msg: "USERNAME: jsmith\nSALT: 7F@x\nHASH: 9ed3cb8be1aec930e4fcdd5aac9892bd554c1504af999b2a25649e890cbe0443",
 },
 ]

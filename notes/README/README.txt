@@ -30,21 +30,6 @@ Pixel Cyberpunk Interior
 	
 	last accessed : 22.04.2025 ora: 17:05
 
-Modern Interiors: 
-
-Readme contains: 
-
-FREE VERSION LICENSE:
-
-CAN:
-YOU CAN USE THE ASSET IN NON COMMERCIAL PROJECTS
-YOU CAN EDIT THE SPRITES AND USE THEM IN NON COMMERCIAL PROJECTS
-
-CAN'T:
-YOU CAN'T USE THE ASSET IN COMMERCIAL PROJECTS
-YOU CAN'T EDIT THE SPRITES AND USE THEM IN COMMERCIAL PROJECTS
-YOU CAN'T EDIT AND RESELL THE SPRITES
-
 
 
 SHA-256 implementation in GML – created by Reddit user Anixia, retrieved from
@@ -54,3 +39,9 @@ Used with permission for educational purposes.
 
 terminal beep sound (snd_beep):
 https://freesound.org/people/InspectorJ/sounds/403008/
+
+Efectul sonor „Door Unlock” este folosit sub licența Creative Commons Attribution-NonCommercial 4.0.
+
+Autor: angelkunev  
+Sursa: https://freesound.org/people/angelkunev/sounds/519065/  
+Licență: https://creativecommons.org/licenses/by-nc/4.0/

@@ -1,4 +1,4 @@
-draw_set_color(c_white);
+draw_set_color(c_red);
 draw_text(32, 32,
 "POSSIBLE_PASSOWRDS.txt\n\n" +
 " - whispernight\n" +
