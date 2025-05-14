@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bug1_SL",
+  "%Name":"obj_enemy2",
   "eventList":[],
   "managed":true,
-  "name":"obj_bug1_SL",
+  "name":"obj_enemy2",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"xp_value","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"xp_value","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"130",},
   ],
   "parent":{
     "name":"Enemies",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy1",
-    "path":"sprites/spr_enemy1/spr_enemy1.yy",
+    "name":"spr_enemy2",
+    "path":"sprites/spr_enemy2/spr_enemy2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,5 +1,9 @@
 draw_self();
 
+if (data.is_guarding) {
+    draw_sprite(spr_shield, 0, x, y - sprite_height / 2 - 4);
+}
+
 var _x = xstart - 20;
 var _y = ystart + 20;
 var _w = 40;

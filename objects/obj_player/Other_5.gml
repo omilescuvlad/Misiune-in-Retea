@@ -6,5 +6,8 @@ instance_create_depth(0, 0, 0, obj_carry_data,{
     xp_require: xp_require,
     damage: damage,
     hp_total: hp_total,
-    hp: hp
+    hp: hp,
+    unlocked_poison: unlocked_poison,
+    unlocked_stun: unlocked_stun, 
+
 })

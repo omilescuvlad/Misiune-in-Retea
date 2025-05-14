@@ -6,6 +6,8 @@ with(obj_carry_data)
     other.damage = damage;
     other.hp_total = hp_total;
     other.hp = hp;
-    
+    other.unlocked_poison = unlocked_poison;
+    other.unlocked_stun = unlocked_stun;
+
     instance_destroy();
 }

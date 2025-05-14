@@ -9,8 +9,8 @@
   "name":"obj_action_heavy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Battle",
-    "path":"folders/Objects/Battle.yy",
+    "name":"default",
+    "path":"folders/Objects/Battle/default.yy",
   },
   "parentObjectId":{
     "name":"obj_action_parent",

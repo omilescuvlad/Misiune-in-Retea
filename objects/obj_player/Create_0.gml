@@ -11,6 +11,11 @@ level = 1;
 xp = 0;
 xp_require = 100;
 
+unlocked_poison = false;
+unlocked_stun = false;
+
+
+
 function add_xp(_xp_to_add)
 {
     xp += _xp_to_add;
@@ -24,11 +29,25 @@ function add_xp(_xp_to_add)
         hp = hp_total;
         damage += 0.7;
         
-        create_dialogue([
-        {
+        if (level == 2) {
+            unlocked_poison = true;
+            create_dialogue([
+            {
             name: "Felicitari!",
-            msg: $"Ai avansat la nivelul {level}.\nAtributele tale sunt acum:\nHP {hp_total}\nDMG {damage}"
+            msg: $"Ai avansat la nivelul {level} si ai invatat abilitatea Poison Strike!\nAtributele tale sunt acum:\nHP {hp_total}\nDMG {damage}"
+            }
+            ])
         }
-        ])
+        
+        if (level == 3) {
+            unlocked_stun = true;
+            create_dialogue([
+            {
+            name: "Felicitari!",
+            msg: $"Ai avansat la nivelul {level} si ai invatat abilitatea Stun!\nAtributele tale sunt acum:\nHP {hp_total}\nDMG {damage}"
+            }
+            ])
+        
+        }
     }
 }
