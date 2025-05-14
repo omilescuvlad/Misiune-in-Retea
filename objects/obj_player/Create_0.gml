@@ -13,6 +13,8 @@ xp_require = 100;
 
 unlocked_poison = false;
 unlocked_stun = false;
+unlocked_heal = false;
+
 
 
 
@@ -45,6 +47,16 @@ function add_xp(_xp_to_add)
             {
             name: "Felicitari!",
             msg: $"Ai avansat la nivelul {level} si ai invatat abilitatea Stun!\nAtributele tale sunt acum:\nHP {hp_total}\nDMG {damage}"
+            }
+            ])
+        
+        }
+        if (level == 4) {
+            unlocked_heal = true;
+            create_dialogue([
+            {
+            name: "Felicitari!",
+            msg: $"Ai avansat la nivelul {level} si ai invatat abilitatea Heal!\nAtributele tale sunt acum:\nHP {hp_total}\nDMG {damage}"
             }
             ])
         

@@ -3,8 +3,11 @@ if (!instance_exists(enemy)) {
     exit;
 }
 
-x = enemy.x - 3;
-y = enemy.bbox_top - 20;
+x = enemy.x - 5;
+y = enemy.bbox_top - 10; 
+
+float_timer += 0.1; // animation
+
 
 if (enemy.status_effect != "poison") {
     instance_destroy();

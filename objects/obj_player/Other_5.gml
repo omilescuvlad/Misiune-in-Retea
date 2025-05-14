@@ -9,5 +9,6 @@ instance_create_depth(0, 0, 0, obj_carry_data,{
     hp: hp,
     unlocked_poison: unlocked_poison,
     unlocked_stun: unlocked_stun, 
+    unlocked_heal: unlocked_heal,
 
 })

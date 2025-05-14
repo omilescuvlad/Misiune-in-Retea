@@ -1,16 +1,17 @@
 obj_battle_enemy.data.hp -= damage_to_enemy;
 show_debug_message("[APPLY] Damage_to_enemy applied: " + string(damage_to_enemy));
 
-
 if (check_for_end()) {
     alarm[2] = 60;
 } else {
-    alarm[3] = 10; // ➜ mai întâi aplicăm poison
+    alarm[3] = 10; //  mai întâi aplicăm poison
     obj_battle_enemy.alarm[0] = 30;
 }
-
 
 obj_battle_player.data.charge += 0.4;
 if (obj_battle_player.data.charge > 1) { 
     obj_battle_player.data.charge = 1;
 }
+
+// oprește efectul vizual de Heal după ce tura s-a încheiat
+obj_battle_player.data.is_healing = false;

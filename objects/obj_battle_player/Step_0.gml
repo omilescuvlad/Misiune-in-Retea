@@ -1,4 +1,4 @@
-// 🛡️ Guard: pas în spate și revenire
+// Guard: pas în spate și revenire
 if (guard_step_phase == 1) {
     if (x > origin_x - 20) {
         x -= 2;
@@ -9,8 +9,8 @@ if (guard_step_phase == 1) {
     }
 }
 
-// 🗡️ Atac: pas în față și revenire
-if (guard_step_phase == 0) { // se execută doar dacă guard nu e în desfășurare
+// Atac: pas în față și revenire (numai dacă nu e în guard)
+if (guard_step_phase == 0) {
     if (attack_step_phase == 1) {
         if (x < origin_x + 20) {
             x += 2;
@@ -22,3 +22,15 @@ if (guard_step_phase == 0) { // se execută doar dacă guard nu e în desfășur
     }
 }
 
+// Pulse timer pentru efectul de shield
+if (data.is_guarding) {
+    shield_pulse_timer += 0.1;
+} else {
+    shield_pulse_timer = 0;
+}
+
+if (data.is_healing) {
+    heal_pulse_timer += 0.03;
+} else {
+    heal_pulse_timer = 0;
+}

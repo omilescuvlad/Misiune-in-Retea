@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_light",
-    "path":"sprites/spr_button_light/spr_button_light.yy",
+    "name":"spr_action_light",
+    "path":"sprites/spr_action_light/spr_action_light.yy",
   },
   "spriteMaskId":null,
   "visible":true,

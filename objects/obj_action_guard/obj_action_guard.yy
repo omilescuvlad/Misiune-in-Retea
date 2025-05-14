@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gate_closed",
-    "path":"sprites/spr_gate_closed/spr_gate_closed.yy",
+    "name":"spr_action_guard",
+    "path":"sprites/spr_action_guard/spr_action_guard.yy",
   },
   "spriteMaskId":null,
   "visible":true,
