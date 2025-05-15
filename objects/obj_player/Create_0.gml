@@ -1,5 +1,8 @@
 move_speed = 1.5;
 
+global.can_move = true; // terminal related
+
+
 tilemap = layer_tilemap_get_id("Tiles_Col");
 
 hp = 10;

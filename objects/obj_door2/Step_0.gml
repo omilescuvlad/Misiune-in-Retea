@@ -1,5 +1,5 @@
 // Dacă puzzle-ul e rezolvat și poarta nu e deja deblocată
-if (!unlocked && obj_terminal_sha256.match_found) {
+if (!unlocked && obj_terminal_mistake.match_found) {
     unlocked = true;
     solid = false;
     sprite_index = spr_gate_open;
