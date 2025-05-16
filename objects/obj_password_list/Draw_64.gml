@@ -30,10 +30,4 @@ if (input_active) {
     }
 
     draw_text(tx + 20, ty + h - 30, "[ESC] pentru a iesi");
-} else {
-    // Prompt cand esti aproape
-    if (point_distance(x, y, obj_player.x, obj_player.y) < 40) {
-        draw_set_color(c_green);
-        draw_text(x + 13, y - 15, "E");
-    }
-}
+} 

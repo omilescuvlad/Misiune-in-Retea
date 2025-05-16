@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"security_room_final_hint",
-  "eventList":[],
+  "%Name":"obj_security_note",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"security_room_final_hint",
+  "name":"obj_security_note",
   "overriddenProperties":[],
   "parent":{
     "name":"Security Lobby",
     "path":"folders/Objects/Puzzles/Security Lobby.yy",
   },
   "parentObjectId":{
-    "name":"obj_npc_parent",
-    "path":"objects/obj_npc_parent/obj_npc_parent.yy",
+    "name":"obj_note",
+    "path":"objects/obj_note/obj_note.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_security_room_hint",
-    "path":"sprites/spr_security_room_hint/spr_security_room_hint.yy",
+    "name":"spr_note",
+    "path":"sprites/spr_note/spr_note.yy",
   },
   "spriteMaskId":null,
   "visible":true,

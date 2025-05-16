@@ -1,3 +1,4 @@
+
 draw_set_font(fnt_terminal_mistake);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
@@ -61,3 +62,5 @@ if (input_active) {
     
     draw_set_alpha(1);
 }
+
+

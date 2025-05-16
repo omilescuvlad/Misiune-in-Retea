@@ -13,6 +13,7 @@
     {"name":"inst_1F4ED14E","path":"rooms/rm_dev_team_office/rm_dev_team_office.yy",},
     {"name":"inst_35296D0A","path":"rooms/rm_dev_team_office/rm_dev_team_office.yy",},
     {"name":"inst_1BAA434","path":"rooms/rm_dev_team_office/rm_dev_team_office.yy",},
+    {"name":"inst_5611A4CE","path":"rooms/rm_dev_team_office/rm_dev_team_office.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -20,6 +21,7 @@
         {"$GMRInstance":"v2","%Name":"inst_507782ED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_507782ED","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.03125,"scaleY":0.03125,"x":288.0,"y":64.0,},
         {"$GMRInstance":"v2","%Name":"inst_66B71F96","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66B71F96","objectId":{"name":"obj_terminal_mistake","path":"objects/obj_terminal_mistake/obj_terminal_mistake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":347.0,"y":212.0,},
         {"$GMRInstance":"v2","%Name":"inst_1BAA434","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1BAA434","objectId":{"name":"obj_password_list","path":"objects/obj_password_list/obj_password_list.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":282.0,"y":147.0,},
+        {"$GMRInstance":"v2","%Name":"inst_5611A4CE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5611A4CE","objectId":{"name":"obj_rsa_test","path":"objects/obj_rsa_test/obj_rsa_test.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":192.0,},
       ],"layers":[],"name":"Controllers","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_7C731729","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7C731729","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":256.0,},
@@ -35,16 +37,17 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_Back_Details","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Back_Details","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":15,"TileCompressedData":[
           -3,0,2,8,9,-8,0,2,805306454,805306476,-5,0,25,57,58,59,0,0,36,37,38,0,-2147483648,0,1879048318,32,805306369,
-          0,201,7,202,5,0,222,6,223,0,-2147483648,-7,0,-8,-2147483648,-5,0,-10,-2147483648,-3,0,-12,-2147483648,
-          -3,0,-12,-2147483648,-2,0,-13,-2147483648,1,0,-14,-2147483648,1,0,-14,-2147483648,
+          0,201,7,202,5,0,222,6,223,0,-2147483648,-7,0,-8,-2147483648,-5,0,-10,-2147483648,-3,0,-3,-2147483648,
+          1,164,-5,-2147483648,3,164,-2147483648,-2147483648,-3,0,-12,-2147483648,-2,0,-5,-2147483648,2,187,164,
+          -6,-2147483648,1,0,-14,-2147483648,1,0,-14,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"roomsCyberpunkInterior","path":"tilesets/roomsCyberpunkInterior/roomsCyberpunkInterior.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_Col","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Col","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":15,"TileCompressedData":[
           -3,0,1,805306474,-9,805306454,2,0,805306476,-3,0,1,805306494,-8,0,6,-2147483648,0,126,1879048340,111,
           1879048318,-10,2,12,0,126,1879048362,132,100,101,-2147483648,79,80,-2147483648,0,0,-4,-2147483648,4,
-          126,1879048362,0,0,-11,-2147483648,19,126,1879048362,0,0,-2147483648,-2147483648,0,11,-2147483648,0,
-          11,-2147483648,0,11,0,126,1879048362,0,0,-9,-2147483648,-2,0,4,126,1879048362,-2147483648,1073741993,
-          -3,1073741950,16,1073741909,117,118,-2147483648,-2147483648,11,0,0,126,1879048342,1879048322,1073741972,
-          -2147483648,-2147483648,0,805306516,-7,805306538,1,805306518,-4,0,-11,-2147483648,
+          126,1879048362,0,0,-11,-2147483648,19,126,1879048362,0,0,-2147483648,-2147483648,74,11,-2147483648,0,
+          11,94,0,11,94,126,1879048362,0,0,-9,-2147483648,-2,0,4,126,1879048362,-2147483648,1073741993,-3,1073741950,
+          16,1073741909,117,118,94,-2147483648,11,0,0,126,1879048342,1879048322,1073741972,-2147483648,-2147483648,
+          0,805306516,-7,805306538,1,805306518,-4,0,-11,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"roomsCyberpunkInterior","path":"tilesets/roomsCyberpunkInterior/roomsCyberpunkInterior.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_Back","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":15,"TileCompressedData":[
           -3,0,-3,23,4,24,23,23,24,-5,23,-3,0,-3,805306391,4,805306392,805306391,805306391,805306392,-5,805306391,

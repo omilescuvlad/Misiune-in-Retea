@@ -10,7 +10,6 @@ char_colors = {
     "Felicitari!": c_yellow,
     "Security Analyst": c_yellow,
     "Developer" : c_green,
-    "b4t3" : c_red,
 }
 
 security_room_introduction = [
@@ -35,13 +34,6 @@ security_room_tip = [
 },
 ]
 
-security_room_final_tip = [
-{
-    name: "b4t3",
-    msg: "B1t1 d3 p4rrr1t4t3",
-},
-]
-
 dev_office_introduction = [
 {
     name: "Developer",
@@ -61,7 +53,7 @@ dev_office_minilesson = [
 },
 {
     name : "Developer",
-    msg  : "Nu orice cod care foloseste SHA256 e corect. Daca inversezi salt-ul, ai un rezultat complet diferit. Ordinea face diferenta între securitate si vulnerabilitate.",
+    msg  : "Nu orice cod care foloseste SHA256 e corect. Daca inversezi salt-ul, ai un rezultat complet diferit. Ordinea face diferenta Intre securitate si vulnerabilitate.",
 },
 ]
 dev_office_passwords = [
