@@ -56,12 +56,40 @@ dev_office_minilesson = [
     msg  : "Nu orice cod care foloseste SHA256 e corect. Daca inversezi salt-ul, ai un rezultat complet diferit. Ordinea face diferenta Intre securitate si vulnerabilitate.",
 },
 ]
+
 dev_office_passwords = [
 {
     name: "Developer",
     msg: "Avem un document vechi cu parole pe undeva... Nu mai stiu care e valida, dar toate au fost testate.",
 }
 ]
+
+code_repo_introduction = [
+{
+    name: "Developer",  
+    msg: "Tocmai ce am implementat un nou sistem de cripare a datelor. Vei avea nevoie sa demonstrezi ca intelegi cum functioneaza pentru a avansa la urmatoarea camera. AI-ul e aproape oprit, nu ii vei face fata fara a intelege acest concept de baza."
+},
+]
+
+code_repo_minilesson = [
+{
+    name: "Developer",
+    msg: "Hey... daca ai ajuns pana aici, inseamna ca ai dobandit multe cunostinte, destule cat sa ne ajuti sa oprim si AI-ul malitios poate.",
+},
+{
+    name: "Developer",
+    msg: "E simplu. Terminalul nu foloseste parole, ci criptografie. RSA, criptare asimetrica. Ai doua chei - una publica, una privata. Cu cea privata semnezi, cu cea publica demonstrezi ca semnatura e a ta.",
+},
+{
+    name: "Developer",
+    msg: "Prima comanda? Genereaza-ti cheile. Dupa ce primesti intrebarea, semneaza-ti raspunsul. O sa-ti salveze semnatura si o afiseaza direct. La final, verifici semnatura. Poti sa scrii \"[semnatura copiata]\" in locul semnaturii daca vrei, merge direct.",  
+},
+{
+    name: "Developer",
+    msg: "Tot ce faci aici e real, nu e doar simulare. Terminalul chiar lucreaza cu fisierele tale. Asta e puterea semnaturii digitale."
+},
+]
+
 
 
 

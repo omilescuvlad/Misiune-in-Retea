@@ -1,4 +1,6 @@
 action = function () {
+    audio_play_sound(snd_heal, 1, false);
+    
     var _p = obj_battle_player;
 
     // activează efectul vizual

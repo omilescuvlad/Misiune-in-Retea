@@ -18,8 +18,7 @@ unlocked_poison = false;
 unlocked_stun = false;
 unlocked_heal = false;
 
-
-
+audio_play_sound(snd_lofi, 1, true); // <- true = loop
 
 function add_xp(_xp_to_add)
 {

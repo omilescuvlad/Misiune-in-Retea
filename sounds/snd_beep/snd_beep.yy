@@ -12,8 +12,8 @@
   "duration":1.2880045,
   "name":"snd_beep",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"FX",
+    "path":"folders/Sounds/FX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

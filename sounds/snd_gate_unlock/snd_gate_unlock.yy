@@ -12,8 +12,8 @@
   "duration":1.3082767,
   "name":"snd_gate_unlock",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"FX",
+    "path":"folders/Sounds/FX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

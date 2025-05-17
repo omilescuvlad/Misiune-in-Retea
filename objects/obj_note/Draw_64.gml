@@ -20,7 +20,7 @@ if (note_open) {
     draw_set_halign(fa_left);
 
     var msg =
-        "La hashing nu conteaza doar.\n" +
+        "La hashing nu conteaza doar\n" +
         "functia. Conteaza si ORDINEA\n" +
         "in care o aplici. Ai grija daca\n" +
         "salt-ul e pus inainte sau dupa parola...\n\n" +

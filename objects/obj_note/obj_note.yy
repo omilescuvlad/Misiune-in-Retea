@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Dev Team Office",
-    "path":"folders/Objects/NPC/Dev Team Office.yy",
+    "path":"folders/Objects/Puzzles/Dev Team Office.yy",
   },
   "parentObjectId":null,
   "persistent":false,

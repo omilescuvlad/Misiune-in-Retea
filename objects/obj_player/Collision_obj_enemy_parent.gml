@@ -7,3 +7,5 @@ _switcher.enemy_data = other;
 _switcher.original_room = room;
 
 room_goto(rm_battle);
+
+change_music(snd_lofi, snd_battle);

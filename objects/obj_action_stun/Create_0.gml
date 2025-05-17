@@ -1,4 +1,5 @@
 action = function () {
+    audio_play_sound(snd_stun, 1, false);
     obj_battle_enemy.status_effect = "stun";
     obj_battle_enemy.status_duration = 1;
 
@@ -7,6 +8,6 @@ action = function () {
 
     show_debug_message("[STUN] Enemy stunned!");
 
-    obj_battle_player.data.charge = 0; // consumă bara
+    obj_battle_player.data.charge = 0; 
     obj_battle_manager.player_attack(1.2);
 }

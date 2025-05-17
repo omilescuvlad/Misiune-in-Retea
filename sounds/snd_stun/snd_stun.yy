@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_stun",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":3,
+  "conversionMode":0,
+  "duration":1.3528345,
+  "name":"snd_stun",
+  "parent":{
+    "name":"Battle FX",
+    "path":"folders/Sounds/Battle FX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_stun.mp3",
+  "type":1,
+  "volume":1.0,
+}

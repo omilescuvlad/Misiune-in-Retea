@@ -31,3 +31,5 @@ if (input_active) {
 
     draw_text(tx + 20, ty + h - 30, "[ESC] pentru a iesi");
 } 
+
+draw_set_color(c_white);
