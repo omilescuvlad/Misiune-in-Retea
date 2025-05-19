@@ -4,6 +4,7 @@ if (instance_exists(obj_player)) {
         if (keyboard_check_pressed(ord("E"))) {
             input_active = true;
             global.can_move = false;
+            global.interact = true;
             keyboard_clear(true);
         }
     }
@@ -11,6 +12,7 @@ if (instance_exists(obj_player)) {
     if (input_active && keyboard_check_pressed(vk_escape)) {
         input_active = false;
         global.can_move = true;
+        global.interact = false;
         keyboard_clear(true);
     }
 }

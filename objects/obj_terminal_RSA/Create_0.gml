@@ -18,3 +18,4 @@ correct_answer = "secure sockets layer";
 
 
 global.can_move = true;
+global.puzzle3_solved = false;

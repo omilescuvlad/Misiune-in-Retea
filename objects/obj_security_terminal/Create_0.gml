@@ -6,3 +6,4 @@ player_input = "";
 feedback_text = "";
 match_found = false;
 global.can_move = true;
+global.puzzle1_solved = false;

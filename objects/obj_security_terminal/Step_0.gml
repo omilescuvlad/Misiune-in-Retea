@@ -5,6 +5,7 @@ if (!input_active && !match_found && instance_exists(obj_player)) {
         feedback_text = "";
         keyboard_string = "";
         global.can_move = false;
+        global.interact = true;
     }
 }
 
@@ -35,4 +36,5 @@ if (input_active && keyboard_check_pressed(vk_escape)) {
     feedback_text = "";
     keyboard_string = "";
     global.can_move = true;
+    global.interact = false;
 }

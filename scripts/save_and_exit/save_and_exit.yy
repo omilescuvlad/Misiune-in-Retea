@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"save_and_exit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"save_and_exit",
+  "parent":{
+    "name":"UI",
+    "path":"folders/Scripts/UI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

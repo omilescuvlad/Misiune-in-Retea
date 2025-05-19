@@ -1,11 +1,12 @@
 // Activare terminal
 if (!input_active && !match_found && instance_exists(obj_player)) {
-    if (point_distance(x, y, obj_player.x, obj_player.y) < 32 && keyboard_check_pressed(ord("E"))) {
+    if (point_distance(x, y, obj_player.x, obj_player.y) < 70 && keyboard_check_pressed(ord("E"))) {
         input_active = true;
         keyboard_string = "";
         player_input = "";
         feedback_text = "";
         global.can_move = false;
+        global.interact = true;
     }
 }
 
@@ -40,7 +41,7 @@ if (input_active && !match_found) {
         if (hash_test == target_hash) {
             feedback_text = "Ai identificat implementarea corecta!";
             match_found = true;
-            global.puzzle5_solved = true;
+            global.puzzle2_solved = true;
         } else {
             feedback_text = "Nu se potriveste. Incearca alta combinatie.";
         }
@@ -48,13 +49,14 @@ if (input_active && !match_found) {
         keyboard_string = "";
         player_input = "";
     }
+}
 
-    // ESC – iesire
-    if (keyboard_check_pressed(vk_escape)) {
-        input_active = false;
-        player_input = "";
-        feedback_text = "";
-        keyboard_string = "";
-        global.can_move = true;
-    }
+// ESC – iesire (permite iesirea si dupa match_found)
+    if (input_active && keyboard_check_pressed(vk_escape)) {
+    input_active = false;
+    player_input = "";
+    feedback_text = "";
+    keyboard_string = "";
+    global.can_move = true;
+    global.interact = false;
 }

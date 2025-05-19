@@ -42,6 +42,8 @@ function scr_parse_command(command_raw) {
             var sig = (args[1] == "[semnatura copiata]") ? last_signature : args[1];
             var key = args[2];
             var result = rsa_verify(msg, sig, key);
+            if(result)
+                global.puzzle3_solved = true;
             return result == 1 ? "Semnatura valida!" : "Semnatura INVALIDA!";
         
         case "help": 

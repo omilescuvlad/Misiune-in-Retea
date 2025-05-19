@@ -8,4 +8,6 @@ _switcher.original_room = room;
 
 room_goto(rm_battle);
 
+global.interact = true;
+
 change_music(snd_lofi, snd_battle);

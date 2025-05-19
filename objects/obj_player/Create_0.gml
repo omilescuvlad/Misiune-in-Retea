@@ -1,6 +1,10 @@
+winw = window_get_width();
+winh = window_get_height();
+
 move_speed = 1.5;
 
 global.can_move = true; // terminal related
+global.interact = false;
 
 
 tilemap = layer_tilemap_get_id("Tiles_Col");
@@ -17,8 +21,6 @@ xp_require = 100;
 unlocked_poison = false;
 unlocked_stun = false;
 unlocked_heal = false;
-
-audio_play_sound(snd_lofi, 1, true); // <- true = loop
 
 function add_xp(_xp_to_add)
 {

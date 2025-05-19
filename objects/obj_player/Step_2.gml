@@ -1,6 +1,6 @@
 with(all)
 {
-    depth = -bbox_bottom;
+    if(!on_ui_layer) depth = -bbox_bottom;
 }
 
 var _cam = view_camera[0];

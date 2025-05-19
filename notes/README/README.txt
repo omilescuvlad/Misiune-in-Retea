@@ -13,6 +13,9 @@ Alte tutoriale utilizate pentru funcționalități specifice:
   - https://www.youtube.com/watch?v=wTJgnxJ6M-I
   - https://www.youtube.com/watch?v=CrRLlzHoW1M
   - https://www.youtube.com/watch?v=2JDkTIk2OkI
+  - https://www.youtube.com/watch?v=W5LfXP8uZvg&ab_channel=GameMaker
+  - https://www.youtube.com/watch?v=jjeGRgenqdo&ab_channel=Heartbeast
+  - https://www.youtube.com/watch?v=Us5GSddVedY&t=97s&ab_channel=GameMaker
 
 Sunete
 Efect sonor: "Door Unlock"

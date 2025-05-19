@@ -5,6 +5,7 @@ if (!input_active && !rsa_solved && instance_exists(obj_player)) {
         player_input = "";
         keyboard_string = "";
         global.can_move = false;
+        global.interact = true;
     }
 }
 
@@ -25,5 +26,6 @@ if (keyboard_check_pressed(vk_enter)) {
         keyboard_string = "";
         feedback_text = "";
         global.can_move = true;
+        global.interact = false;
     }
 }
