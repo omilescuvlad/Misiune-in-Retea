@@ -16,7 +16,7 @@ heal_pulse_timer = 0;
 if (data.unlocked_poison) {
     if (data.unlocked_poison) {
     var button = instance_create_layer(100, 500, "Instances", obj_action_poison);
-    button.sprite_index = spr_box; // sprite vizibil de test (îl ai sigur deja)
+    button.sprite_index = spr_box; 
     }
     show_debug_message("unlocked_poison: " + string(data.unlocked_poison));
 }

@@ -9,7 +9,7 @@ if (data.is_healing) {
 }
 
 
-// Desenează scutul animat cât timp e guarding
+// Deseneaza scutul animat cat timp e guarding
 if (data.is_guarding) {
     var offset_x = 3;
     var offset_y = -sprite_height / 2;

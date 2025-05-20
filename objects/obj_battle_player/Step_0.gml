@@ -1,4 +1,4 @@
-// Guard: pas în spate și revenire
+// Guard: pas in spate si revenire
 if (guard_step_phase == 1) {
     if (x > origin_x - 20) {
         x -= 2;
@@ -9,7 +9,7 @@ if (guard_step_phase == 1) {
     }
 }
 
-// Atac: pas în față și revenire (numai dacă nu e în guard)
+// Atac: pas în fata si revenire (numai dacă nu e în guard)
 if (guard_step_phase == 0) {
     if (attack_step_phase == 1) {
         if (x < origin_x + 20) {

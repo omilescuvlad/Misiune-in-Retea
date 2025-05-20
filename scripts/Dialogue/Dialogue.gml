@@ -10,6 +10,7 @@ char_colors = {
     "Felicitari!": c_yellow,
     "Security Analyst": c_yellow,
     "Developer" : c_green,
+    "CEO" : c_red,
 }
 
 security_room_introduction = [
@@ -87,6 +88,13 @@ code_repo_minilesson = [
 {
     name: "Developer",
     msg: "Tot ce faci aici e real, nu e doar simulare. Terminalul chiar lucreaza cu fisierele tale. Asta e puterea semnaturii digitale."
+},
+]
+
+CEO_Terminal = [
+{
+    name: "CEO",
+    msg: "AI FIGHT",
 },
 ]
 

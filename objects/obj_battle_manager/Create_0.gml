@@ -5,7 +5,7 @@ apply_poison = function(_turns) {
     obj_battle_enemy.status_effect = "poison";
     obj_battle_enemy.status_duration = _turns;
 
-    // Iconița de status
+    // Iconita de status
     var icon = instance_create_layer(obj_battle_enemy.x, obj_battle_enemy.y - 40, "Instances", obj_poison_icon);
     icon.enemy = obj_battle_enemy;
 }

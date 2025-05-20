@@ -3,6 +3,32 @@ if(window_get_height() != winh || window_get_width() != winw){
 }
 
 if (instance_exists(obj_dialogue)) exit;
+    
+if(instance_exists(obj_final_boss) && !instance_exists(obj_dialogue)){
+    if (instance_exists(obj_battle_switcher)) exit;
+        
+    global.final_level = true;
+        
+    global.enemy_data = {
+        sprite_index: spr_developer,
+        hp_total: 150,
+        damage: 18, 
+        hp: 150,
+    };
+    
+    var _switcher = instance_create_depth(0 ,0 ,0 ,obj_battle_switcher);
+
+    _switcher.player_data = self;
+    _switcher.enemy_data = global.enemy_data;
+    _switcher.original_room = room;
+
+    room_goto(rm_battle);
+
+    global.interact = true;
+
+    change_music(snd_lofi, snd_final_battle);
+}
+    
 
 if (global.can_move) {
     var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
