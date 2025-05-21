@@ -1,4 +1,4 @@
-# Cyberpunk RPG – GameMaker Project
+# Misiune în Rețea
 
 Acest proiect a fost creat folosind GameMaker (versiunea 2024.13.1.193) și are la bază structura oferită în tutorialul oficial de tip RPG.
 
