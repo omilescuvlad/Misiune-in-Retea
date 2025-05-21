@@ -13,9 +13,9 @@ if(instance_exists(obj_final_boss) && !instance_exists(obj_dialogue)){
         
     global.enemy_data = {
         sprite_index: spr_developer,
-        hp_total: 150,
-        damage: 18, 
-        hp: 150,
+        hp_total: 25,
+        damage: 2, 
+        hp: 25,
     };
     
     var _switcher = instance_create_depth(0 ,0 ,0 ,obj_battle_switcher);
