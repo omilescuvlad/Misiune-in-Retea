@@ -4,7 +4,7 @@ Acest proiect a fost creat folosind GameMaker (versiunea 2024.13.1.193) și are 
 
 ---
 
-## 📚 Tutoriale utilizate
+## Tutoriale utilizate
 
 ### Proiect de bază:
 - **GameMaker RPG Tutorial – Part 1**  
@@ -12,17 +12,17 @@ Acest proiect a fost creat folosind GameMaker (versiunea 2024.13.1.193) și are 
   [🔗 Link YouTube](https://youtu.be/1J5EydrnIPs)
 
 ### Funcționalități specifice:
-- [NB6uYFmTzWU – Battle System](https://www.youtube.com/watch?v=NB6uYFmTzWU)
-- [HqmQAoPdZ2U – Leveling & XP](https://www.youtube.com/watch?v=HqmQAoPdZ2U)
-- [wTJgnxJ6M-I – Dialogue System](https://www.youtube.com/watch?v=wTJgnxJ6M-I)
-- [CrRLlzHoW1M – Touch Ups](https://www.youtube.com/watch?v=CrRLlzHoW1M)
-- [2JDkTIk2OkI – Bug Fixes](https://www.youtube.com/watch?v=2JDkTIk2OkI)
-- [jjeGRgenqdo – Slider Bar](https://www.youtube.com/watch?v=jjeGRgenqdo&ab_channel=Heartbeast)
-- [Us5GSddVedY – Main Menu](https://www.youtube.com/watch?v=Us5GSddVedY&t=97s&ab_channel=GameMaker)
+- [Battle System](https://www.youtube.com/watch?v=NB6uYFmTzWU)
+- [Leveling & XP](https://www.youtube.com/watch?v=HqmQAoPdZ2U)
+- [Dialogue System](https://www.youtube.com/watch?v=wTJgnxJ6M-I)
+- [Touch Ups](https://www.youtube.com/watch?v=CrRLlzHoW1M)
+- [Bug Fixes](https://www.youtube.com/watch?v=2JDkTIk2OkI)
+- [Slider Bar](https://www.youtube.com/watch?v=jjeGRgenqdo&ab_channel=Heartbeast)
+- [Main Menu](https://www.youtube.com/watch?v=Us5GSddVedY&t=97s&ab_channel=GameMaker)
 
 ---
 
-## 🔊 Sunete
+## Sunete
 
 | Nume | Denumire în proiect | Autor | Licență |
 |------|----------------------|--------|---------|
@@ -40,9 +40,9 @@ Acest proiect a fost creat folosind GameMaker (versiunea 2024.13.1.193) și are 
 
 ---
 
-## 🧩 Extensii
+## Extensii
 
-### 🔐 SHA-256 GML Implementation
+### SHA-256 GML Implementation
 - Autor: *Anixia*
 - [Link Reddit](https://www.reddit.com/r/gamemaker/comments/eween1/sha256_hashes_in_native_gml_gms2/)
 - Format: `.yymp` (extensie GML nativă)
@@ -50,7 +50,7 @@ Acest proiect a fost creat folosind GameMaker (versiunea 2024.13.1.193) și are 
 
 ---
 
-## 🎨 Tileset & Grafică
+## Tileset & Grafică
 
 - **Pixel Cyberpunk Interior**  
   Autor: *LivingTheIndie*  
