@@ -9,8 +9,8 @@
   "name":"obj_door_dev_team_office",
   "overriddenProperties":[],
   "parent":{
-    "name":"Security Lobby",
-    "path":"folders/Objects/Doors/Security Lobby.yy",
+    "name":"Dev Team Office",
+    "path":"folders/Objects/Doors/Dev Team Office.yy",
   },
   "parentObjectId":null,
   "persistent":false,

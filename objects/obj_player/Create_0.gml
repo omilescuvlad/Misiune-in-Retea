@@ -10,7 +10,7 @@ global.interact = false;
 
 tilemap = layer_tilemap_get_id("Tiles_Col");
 
-hp = 1000;
+hp = 10;
 hp_total = hp;
 damage = 1;
 charge = 0;

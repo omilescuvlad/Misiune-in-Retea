@@ -30,7 +30,8 @@ if (input_active && !match_found) {
     }
 }
 
-if (input_active && keyboard_check_pressed(vk_escape)) {
+// ESC – iesire (permite iesirea si dupa match_found)
+    if (input_active && keyboard_check_pressed(vk_escape)) {
     input_active = false;
     player_input = "";
     feedback_text = "";

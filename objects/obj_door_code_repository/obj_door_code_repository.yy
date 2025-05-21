@@ -9,8 +9,8 @@
   "name":"obj_door_code_repository",
   "overriddenProperties":[],
   "parent":{
-    "name":"Security Lobby",
-    "path":"folders/Objects/Doors/Security Lobby.yy",
+    "name":"Code Repository",
+    "path":"folders/Objects/Doors/Code Repository.yy",
   },
   "parentObjectId":null,
   "persistent":false,

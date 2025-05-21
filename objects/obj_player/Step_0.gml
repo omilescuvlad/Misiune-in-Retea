@@ -2,6 +2,8 @@ if(window_get_height() != winh || window_get_width() != winw){
     display_set_gui_maximize();
 }
 
+
+
 if (instance_exists(obj_dialogue)) exit;
     
 if(instance_exists(obj_final_boss) && !instance_exists(obj_dialogue)){

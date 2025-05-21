@@ -20,12 +20,13 @@ if (keyboard_check_pressed(vk_enter)) {
 }
 
 
-    if (keyboard_check_pressed(vk_escape)) {
-        input_active = false;
-        player_input = "";
-        keyboard_string = "";
-        feedback_text = "";
-        global.can_move = true;
-        global.interact = false;
-    }
+    // ESC – iesire (permite iesirea si dupa match_found)
+    if (input_active && keyboard_check_pressed(vk_escape)) {
+    input_active = false;
+    player_input = "";
+    feedback_text = "";
+    keyboard_string = "";
+    global.can_move = true;
+    global.interact = false;
+}
 }

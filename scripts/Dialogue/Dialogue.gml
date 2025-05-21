@@ -94,7 +94,7 @@ code_repo_minilesson = [
 CEO_Terminal = [
 {
     name: "CEO",
-    msg: "AI FIGHT",
+    msg: "In final, ai reusit sa ma gasesti. Hai sa vedem cat de bine te-ai pregatit!",
 },
 ]
 
