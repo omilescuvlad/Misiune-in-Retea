@@ -11,12 +11,3 @@ attack_step_phase = 0;
 
 data.is_healing = false;
 heal_pulse_timer = 0;
-
-
-if (data.unlocked_poison) {
-    if (data.unlocked_poison) {
-    var button = instance_create_layer(100, 500, "Instances", obj_action_poison);
-    button.sprite_index = spr_box; 
-    }
-    show_debug_message("unlocked_poison: " + string(data.unlocked_poison));
-}

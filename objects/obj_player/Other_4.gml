@@ -1,3 +1,24 @@
+tilemap = layer_tilemap_get_id("Tiles_Col");
+
+switch (room)
+{
+    case rm_ceo_terminal:
+        x = 240;
+        y = 192;
+        break;
+    
+    case rm_code_repository:
+        x = 187;
+        y = 250;
+        break;
+
+    case rm_dev_team_office:
+        x = 45;
+        y = 250;
+        break;
+
+}
+
 with(obj_carry_data)
 {
     other.level = level;

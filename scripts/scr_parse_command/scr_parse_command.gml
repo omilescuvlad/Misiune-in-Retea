@@ -26,25 +26,33 @@ function scr_parse_command(command_raw) {
             if (array_length(args) != 2) return "Trebuie 2 argumente: pub, priv.";
             rsa_generate_keypair(args[0], args[1]);
             return "Cheile RSA au fost generate in fisiere.";
-
+        
         case "rsa_sign":
-            if (array_length(args) != 1) return "rsa_sign() primește 1 mesaj.";
-            var sig = rsa_sign(args[0], "player_priv.pem");
-            string_save("answer_signature.txt", sig);
-            last_signature = sig; // o reținem în memorie
-            string_save("answer_signature.txt", sig);
-            return "Semnatura salvată.\nSemnatura: " + sig;
-
+        if (array_length(args) != 1 || string_length(string_trim(args[0])) == 0) {
+            return "Eroare: rsa_sign(mesaj) – asigura-te ca mesajul este între ghilimele.";
+        }
+    
+        var msg = args[0];
+        var sig = rsa_sign(msg, "player_priv.pem");
+        string_save("answer_signature.txt", sig);
+        last_signature = sig;
+    
+        return "Semnatura salvată.\\nSemnatura: " + sig;
 
         case "rsa_verify":
-            if (array_length(args) != 3) return "rsa_verify(msg, sig, pub)";
+            if (array_length(args) < 3) {
+                return "Eroare: rsa_verify(msg, semnatura, cheia_pub) – trebuie 3 argumente.";
+            }
             var msg = args[0];
             var sig = (args[1] == "[semnatura copiata]") ? last_signature : args[1];
             var key = args[2];
             var result = rsa_verify(msg, sig, key);
-            if(result)
+            if (result)
                 global.puzzle3_solved = true;
             return result == 1 ? "Semnatura valida!" : "Semnatura INVALIDA!";
+        
+        
+
         
         case "help": 
         return "=== COMENZI DISPONIBILE ===\n" +
@@ -66,7 +74,6 @@ function scr_parse_command(command_raw) {
         feedback_text = "";
         last_signature = "";
         return "";
-
 
         default:
             return "Functie necunoscuta.";

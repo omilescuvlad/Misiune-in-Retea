@@ -1,8 +1,19 @@
-if(window_get_height() != winh || window_get_width() != winw){
-    display_set_gui_maximize();
+// control vizibilitate și mișcare în funcție de room
+if (room == rm_mainMenu || room == rm_helpMenu || room == rm_settingsMenu || room == rm_battle)
+{
+    visible = false;
+    global.can_move = false;
+}
+else
+{
+    visible = true;
+    global.can_move = true;
 }
 
 
+if(window_get_height() != winh || window_get_width() != winw){
+    display_set_gui_maximize();
+}
 
 if (instance_exists(obj_dialogue)) exit;
     
