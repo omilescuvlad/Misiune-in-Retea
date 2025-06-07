@@ -34,7 +34,7 @@ Acest proiect a fost creat folosind GameMaker (versiunea 2024.13.1.193) și are 
 | Sword Hit | `snd_light_hit` | [qubodup](https://freesound.org/people/qubodup/sounds/442769/) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | Epic Sword Clash | `snd_heavy_hit` | [CTCollab](https://freesound.org/people/CTCollab/sounds/223612/) | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) |
 | Shield Block | `snd_guard` | [Diasyl](https://freesound.org/people/Diasyl/sounds/792354/) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
-| Magic Strike | `snd_poison` | [Aleks41](https://freesound.org/people/Aleks41/sounds/406063/) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| Poison Strike | `snd_poison` | [Aleks41](https://freesound.org/people/Aleks41/sounds/406063/) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | Stun Hit | `snd_stun` | [Artninja](https://freesound.org/people/Artninja/sounds/699990/) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | Heart Collect / Heal | `snd_heal` | [Taiki](https://freesound.org/people/ReincarnatedEchoes/sounds/644306/) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 
