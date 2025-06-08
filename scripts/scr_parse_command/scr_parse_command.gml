@@ -37,14 +37,14 @@ function scr_parse_command(command_raw) {
         string_save("answer_signature.txt", sig);
         last_signature = sig;
     
-        return "Semnatura salvată.\\nSemnatura: " + sig;
+        return "Semnatura salvata.\nSemnatura: " + sig;
 
         case "rsa_verify":
             if (array_length(args) < 3) {
                 return "Eroare: rsa_verify(msg, semnatura, cheia_pub) – trebuie 3 argumente.";
             }
-            var msg = args[0];
-            var sig = (args[1] == "[semnatura copiata]") ? last_signature : args[1];
+            msg = args[0];
+            sig = (args[1] == "[semnatura copiata]") ? last_signature : args[1];
             var key = args[2];
             var result = rsa_verify(msg, sig, key);
             if (result)
