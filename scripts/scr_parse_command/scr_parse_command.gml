@@ -1,6 +1,3 @@
-/// @desc Parsează comanda terminalului și execută real
-/// @param command string
-
 function scr_parse_command(command_raw) {
     var cmd = string_trim(command_raw);
     if (!scr_check_syntax(cmd)) {
@@ -11,7 +8,6 @@ function scr_parse_command(command_raw) {
     var arg_str = string_copy(cmd, string_pos("(", cmd) + 1, string_length(cmd) - string_pos("(", cmd) - 1);
     var args = string_split(arg_str, ",");
 
-    // Scoatem ghilimelele
     for (var i = 0; i < array_length(args); i++) {
         args[i] = string_replace_all(string_replace_all(string_trim(args[i]), "\"", ""), "'", "");
     }

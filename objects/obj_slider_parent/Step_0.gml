@@ -1,4 +1,3 @@
-//verify if mouse on buttton
 if(mouse_check_button_pressed(mb_left)){
     var button_x = x + sprite_width * value;
     var button_y = y;

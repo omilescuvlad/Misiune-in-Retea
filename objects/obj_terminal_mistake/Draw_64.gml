@@ -3,12 +3,10 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 if (input_active) {
-    // FUNDAL COMPLET NEGRU
     draw_set_alpha(1);
     draw_set_color(c_black);
     draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
 
-    // DIMENSIUNI + BORDER
     var margin = 16;
     var tx = margin;
     var ty = margin;
@@ -16,9 +14,8 @@ if (input_active) {
     var th = display_get_gui_height() - 2 * margin;
 
     draw_set_color(c_white);
-    draw_rectangle(tx, ty, tx + tw, ty + th, true); // contur alb subțire
+    draw_rectangle(tx, ty, tx + tw, ty + th, true); 
 
-    // TEXT: verde stil terminal
     draw_set_color(c_lime);
     var text_y = ty + 20;
 
@@ -36,7 +33,7 @@ if (input_active) {
     for (var i = 0; i < array_length(modes); i++) {
         var prefix = (i == selected_mode) ? "-> " : "   ";
         if (i == mode_correct) {
-            draw_set_color(c_green); // verde pentru modul corect
+            draw_set_color(c_green); 
         } else {
             draw_set_color(c_lime);
         }
@@ -44,7 +41,7 @@ if (input_active) {
         text_y += 20;
     }
 
-    draw_set_color(c_lime); // resetam culoarea
+    draw_set_color(c_lime); 
     text_y += 20;
     draw_text(tx + 20, text_y, "Parola: " + player_input);
 

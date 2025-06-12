@@ -68,31 +68,3 @@ function add_xp(_xp_to_add)
         }
     }
 }
-
-/*if (!variable_instance_exists(self, "initialized") || !initialized) {
-    winw = window_get_width();
-    winh = window_get_height();
-
-    move_speed = 1.5;
-
-    global.final_level = false;
-    global.can_move = true;
-    global.interact = false;
-
-    tilemap = layer_tilemap_get_id("Tiles_Col");
-
-    hp = 10;
-    hp_total = hp;
-    damage = 1;
-    charge = 0;
-
-    level = 1;
-    xp = 0;
-    xp_require = 100;
-
-    unlocked_poison = false;
-    unlocked_stun = false;
-    unlocked_heal = false;
-
-    initialized = true; // marchez că am făcut deja setup-ul
-}*/

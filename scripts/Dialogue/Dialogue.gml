@@ -10,7 +10,7 @@ char_colors = {
     "Felicitari!": c_yellow,
     "Security Analyst": c_yellow,
     "Developer" : c_green,
-    "CEO" : c_red,
+    "AI" : c_red,
 }
 
 security_room_introduction = [
@@ -93,13 +93,7 @@ code_repo_minilesson = [
 
 CEO_Terminal = [
 {
-    name: "CEO",
+    name: "AI",
     msg: "In final, ai reusit sa ma gasesti. Hai sa vedem cat de bine te-ai pregatit!",
 },
 ]
-
-
-
-
-
-

@@ -1,4 +1,3 @@
-// control vizibilitate și mișcare în funcție de room
 if (room == rm_mainMenu || room == rm_helpMenu || room == rm_settingsMenu || room == rm_battle)
 {
     visible = false;

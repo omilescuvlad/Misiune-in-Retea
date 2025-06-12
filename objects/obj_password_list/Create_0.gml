@@ -1,4 +1,3 @@
-// 📌 Create Event:
 password_list = [
     "moonlight",
     "coffee2024",

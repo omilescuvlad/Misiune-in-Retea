@@ -1,4 +1,3 @@
-// Inherit the parent event
 event_inherited();
 
 if(global.current_room == undefined)

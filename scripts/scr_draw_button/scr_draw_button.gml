@@ -1,4 +1,3 @@
-/// scr_draw_button(x, y, w, h, label)
 function scr_draw_button(_x, _y, _w, _h, _label) {
     var mx = device_mouse_x_to_gui(0);
     var my = device_mouse_y_to_gui(0);

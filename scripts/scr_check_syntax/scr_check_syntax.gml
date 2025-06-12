@@ -1,6 +1,3 @@
-/// @function scr_check_syntax(str)
-/// @desc Verifica daca inputul are () si " " in perechi
-
 function scr_check_syntax(str) {
     var open_parens = 0;
     var quotes = 0;

@@ -1,6 +1,3 @@
-/// @function string_load(filename)
-/// @desc Încarcă un string dintr-un fișier text
-
 function string_load(filename) {
     if (!file_exists(filename)) return "";
     var file = file_text_open_read(filename);
