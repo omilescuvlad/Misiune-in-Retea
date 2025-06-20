@@ -1,5 +1,5 @@
 if (!input_active && !match_found && instance_exists(obj_player)) {
-    if (point_distance(x, y, obj_player.x, obj_player.y) < 70 && keyboard_check_pressed(ord("E"))) {
+    if (point_distance(x, y, obj_player.x, obj_player.y) < 35 && keyboard_check_pressed(ord("E"))) {
         input_active = true;
         keyboard_string = "";
         player_input = "";
